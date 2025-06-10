@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>야추 게임</title>
+</head>
+
+<body>
+    <h1>🎲 야추 🎲</h1>
+
+    <div id="turnDisplay" style="margin: 10px 0; font-weight: bold;">턴: 0 / 13</div>
+
+    <div id="dice-container">
+        <span class="dice">⚀</span>
+        <span class="dice">⚀</span>
+        <span class="dice">⚀</span>
+        <span class="dice">⚀</span>
+        <span class="dice">⚀</span>
+    </div>
+
+    <button onclick="rollDice()">🎲 주사위 굴리기</button>
+    <button onclick="calculateScore()">📊 점수 계산</button>
+    <button onclick="resetGame()">🔄 다시 하기</button>
+    <div id="score">점수: 0</div>
+
+    <table border="1" cellpadding="5" cellspacing="0">
+        <thead>
+            <tr>
+                <th>항목</th>
+                <th>점수</th>
+                <th>기록</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Aces (1)</td>
+                <td id="score-aces">0</td>
+                <td><button onclick="recordScore('aces')">기록</button></td>
+            </tr>
+            <tr>
+                <td>Twos (2)</td>
+                <td id="score-twos">0</td>
+                <td><button onclick="recordScore('twos')">기록</button></td>
+            </tr>
+            <tr>
+                <td>Threes (3)</td>
+                <td id="score-threes">0</td>
+                <td><button onclick="recordScore('threes')">기록</button></td>
+            </tr>
+            <tr>
+                <td>Fours (4)</td>
+                <td id="score-fours">0</td>
+                <td><button onclick="recordScore('fours')">기록</button></td>
+            </tr>
+            <tr>
+                <td>Fives (5)</td>
+                <td id="score-fives">0</td>
+                <td><button onclick="recordScore('fives')">기록</button></td>
+            </tr>
+            <tr>
+                <td>야추</td>
+                <td id="score-sixes">0</td>
+                <td><button onclick="recordScore('sixes')">기록</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+    <script src="script.js"></script>
+
+    <div id="resultMessage" style="margin-top: 20px; font-weight: bold; font-size: 18px;"></div>
+
+
+
+</body>
+
+</html>
