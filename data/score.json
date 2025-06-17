@@ -1,0 +1,11 @@
+{
+  "round": 1,
+  "rerollCount": 0,
+  "savedDice": [],
+  "rolls": [],
+  "scores": {},
+  "yahtzeeBonus": 0,
+  "upperBonus": 0,
+  "total": 0,
+  "history": []
+}

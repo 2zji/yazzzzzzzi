@@ -15,7 +15,7 @@ body {
   margin: 15px 20px;
   background: #ffffff;
   border-radius: 15px;
-  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
   width: 80px;
   height: 80px;
   display: inline-flex;
@@ -43,22 +43,24 @@ button {
   margin: 20px 10px 0 10px;
   border: none;
   border-radius: 8px;
-  background-color: #3b82f6; /* 깔끔한 파란색 */
+  background-color: #3b82f6;
+  /* 깔끔한 파란색 */
   color: white;
   cursor: pointer;
-  box-shadow: 0 4px 8px rgba(59,130,246,0.3);
+  box-shadow: 0 4px 8px rgba(59, 130, 246, 0.3);
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 button:hover {
   background-color: #2563eb;
-  box-shadow: 0 6px 12px rgba(37,99,235,0.5);
+  box-shadow: 0 6px 12px rgba(37, 99, 235, 0.5);
 }
 
 #score {
   font-size: 28px;
   margin-top: 30px;
   font-weight: 600;
-  color: #16a34a; /* 진한 초록색 */
+  color: #16a34a;
+  /* 진한 초록색 */
   letter-spacing: 1.2px;
 }
